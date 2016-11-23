@@ -1,30 +1,28 @@
 *{margin: 0; padding: 0; border: 0; outline: none;}
 
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+body{background: #eee;}
 
 .container{
 	margin: 0 auto;
-	width: 1000px;
+	width: 800px;
 	}
 
 .paragraph{
 	color: #666;
 	font:14px arial;
+	line-height: 20px;
 	margin: 20px 0 0;
+	text-align: justify;
 	}
 
+/* you can set your own class for tooltip and pass this in class in tooltip.js and could and more for another position */
+.tp, .tp1{
+	color: #000;
+	font-size: 15px;
+	}
+
+
+/* Start Tooltip classes */
 .tooltip{
 	background:#fff;
 	box-sizing: border-box;
@@ -96,6 +94,9 @@
 	top:-14px
 	}
 
+/* End Tooltip classes */
+
+/* Start Animation and show hide classes */
 .transition-hide{
 	display:block;
 	opacity:0;
@@ -108,7 +109,6 @@
 			transition:all .3s ease; 
 	}
 
-
 .transition-show{
 	display:block;
 	opacity:1;
@@ -120,4 +120,5 @@
 	   -moz-transition:all .3s ease;
 			transition:all .3s ease; 
 	}
+/* End Animation and show hide classes */
 
