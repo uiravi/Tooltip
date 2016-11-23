@@ -72,7 +72,7 @@ function Tooltip(option){
 };
 
 var tooltip = new Tooltip({
-	tooltipPosition: "bottom", //set tooltip position "top, left, right, bottom" (Default is top if nothing here)
+	tooltipPosition: "top", //set tooltip position "top, left, right, bottom" (Default is top if nothing here)
 	elm: $(".tp")
 });
 
