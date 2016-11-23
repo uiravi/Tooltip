@@ -1,0 +1,123 @@
+*{margin: 0; padding: 0; border: 0; outline: none;}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.container{
+	margin: 0 auto;
+	width: 1000px;
+	}
+
+.paragraph{
+	color: #666;
+	font:14px arial;
+	margin: 20px 0 0;
+	}
+
+.tooltip{
+	background:#fff;
+	box-sizing: border-box;
+	border: 1px solid #d7dde2;
+	color:#585860;
+	display: none;
+	font:11px arial;
+	padding:6px 15px;
+	width:180px;
+	text-align: justify;
+	-webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05);
+	   -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05);
+	position: absolute;
+	}
+
+.tooltip-right:before, .tooltip-right:after, .tooltip-left:before, .tooltip-left:after, .tooltip-top:before, .tooltip-top:after, .tooltip-bottom:before, .tooltip-bottom:after{
+	content:'';
+	display:block;
+	border:15px solid transparent;
+	border-right-color:#d7dde2;
+	position:absolute;
+	left:-30px;
+	top:50%;
+	margin-top:-15px
+	}
+
+.tooltip-right:after{
+	border-right-color:#fff;
+	left:-29px
+	}
+
+.tooltip-left:before, .tooltip-left:after{
+	border-left-color:#d7dde2;
+	border-right-color:transparent;
+	left: auto;
+	right:-30px;
+	}
+
+.tooltip-left:after{
+	border-left-color:#fff;
+	right:-29px
+	}
+
+.tooltip-top:before, .tooltip-top:after{
+	border-top-color:#d7dde2;
+	border-right-color:transparent;
+	left: 50%;
+	top: auto;
+	bottom:-30px;
+	margin-left:-15px
+	}
+
+.tooltip-top:after{
+	border-top-color:#fff;
+	bottom:-29px
+	}
+
+.tooltip-bottom:before, .tooltip-bottom:after{
+	border-bottom-color:#d7dde2;
+	border-right-color:transparent;
+	left: 50%;
+	top: -16px;
+	margin-left:-15px
+	}
+
+.tooltip-bottom:after{
+	border-bottom-color:#fff;
+	top:-14px
+	}
+
+.transition-hide{
+	display:block;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transform:translateY(30px);
+	   -moz-transform:translateY(30px);
+		transform:translateY(30px); 
+	-webkit-transition:all .3s ease;
+	   -moz-transition:all .3s ease;
+			transition:all .3s ease; 
+	}
+
+
+.transition-show{
+	display:block;
+	opacity:1;
+	visibility:visible;
+	-webkit-transform:translateY(0);
+	   -moz-transform:translateY(0);
+		transform:translateY(0); 
+	-webkit-transition:all .3s ease;
+	   -moz-transition:all .3s ease;
+			transition:all .3s ease; 
+	}
+
