@@ -6,7 +6,6 @@
 - Highly Customizable
 - No images used
 - Readable CSS and JS, well commented so that you can make your changes as per your requirements
-- Well commented CSS
 - Used "data" attribute for tooltip content
 
 #### Dependency:
