@@ -7,6 +7,7 @@
 - No images used
 - Readable CSS and JS, well commented so that you can make your changes as per your requirements
 - Used "data" attribute for tooltip content
+- could add element (HTML tag) inside tooltip container
 
 #### Dependency:
 - jQuery and CSS (Could easily modify css as per requirment and colors)

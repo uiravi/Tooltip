@@ -26,7 +26,7 @@ function Tooltip(option){
 			$tooltip_container = $tpContainer;
 
 		$tpContainer
-		.text($(this).attr('data')) // Getting attribute for tolltip data (Could change as per requirment)
+		.html($(this).attr('data')) // Getting attribute for tolltip data (Could change as per requirment)
 		.addClass("transition-show"); //Adding this class for show hide and animation (Could change as per requirment)
 		
 		if(right){
