@@ -28,7 +28,7 @@ var tooltip1 = new Tooltip({
 </pre>
 
 
-#### Default instance for top position
+#### Instance for default "top" position
 <pre>
 <code>
 var tooltip = new Tooltip({
