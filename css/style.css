@@ -15,7 +15,7 @@ body{background: #eee;}
 	text-align: justify;
 	}
 
-/* you can set your own class for tooltip and pass this in class in tooltip.js and could and more for another position */
+/* you can set your own class for tooltip and pass this class in tooltip.js and could add more for another position */
 .tp, .tp1{
 	color: #000;
 	font-size: 15px;
